@@ -116,7 +116,7 @@
 				<Width>256</Width>
 				<Height>256</Height>
 				<Format>image/png</Format>
-				<Layers>GH:openstreetmap</Layers>
+				<Layers>GH:mezhi_severynivska</Layers>
 				<Styles></Styles>
 			</TileSet>
 			<TileSet>
@@ -126,7 +126,7 @@
 				<Width>256</Width>
 				<Height>256</Height>
 				<Format>image/png</Format>
-				<Layers>GH:openstreetmap</Layers>
+				<Layers>GH:mezhi_severynivska</Layers>
 				<Styles></Styles>
 			</TileSet>
 			<TileSet>
@@ -136,7 +136,7 @@
 				<Width>256</Width>
 				<Height>256</Height>
 				<Format>image/png</Format>
-				<Layers>GH:mezhi_severynivska</Layers>
+				<Layers>GH:openstreetmap</Layers>
 				<Styles></Styles>
 			</TileSet>
 			<TileSet>
@@ -146,7 +146,7 @@
 				<Width>256</Width>
 				<Height>256</Height>
 				<Format>image/png</Format>
-				<Layers>GH:mezhi_severynivska</Layers>
+				<Layers>GH:openstreetmap</Layers>
 				<Styles></Styles>
 			</TileSet>
 			<CustomLayer>
@@ -154,29 +154,14 @@
 				<Title>naselennia</Title>
 				<Operation type="csv">1</Operation>
 			</CustomLayer>
+			<CustomLayer>
+				<Name>GH:osvita_zdo_now</Name>
+				<Title>osvita_zdo_now</Title>
+				<Operation type="csv">1</Operation>
+			</CustomLayer>
 		</VendorSpecificCapabilities>
 		<UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"></UserDefinedSymbolization>
 		<Layer>
-			<Layer queryable="1" opaque="0">
-				<Name>GH:openstreetmap</Name>
-				<Title>openstreetmap</Title>
-				<Abstract>GH:openstreetmap ABSTRACT</Abstract>
-				<KeywordList>
-					<Keyword>group˸tif˸˸˸disabledownload˸notListing˸˸maxZoom˸5</Keyword>
-				</KeywordList>
-				<SRS>EPSG:4326</SRS>
-				<LatLonBoundingBox minx="-180.0" miny="-85.0511287798066" maxx="179.99999999999997" maxy="85.0511287798066"></LatLonBoundingBox>
-				<BoundingBox SRS="EPSG:4326" minx="-20037508.342789244" miny="-20037508.342789248" maxx="20037508.342789244" maxy="20037508.342789248"></BoundingBox>
-				<Style>
-					<Name>1</Name>
-					<Title>1</Title>
-					<Abstract></Abstract>
-					<LegendURL width="20" height="20">
-						<Format>image/png</Format>
-						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=openstreetmap"></OnlineResource>
-					</LegendURL>
-				</Style>
-			</Layer>
 			<Layer queryable="1" opaque="0">
 				<Name>GH:mezhi_severynivska</Name>
 				<Title>mezhi_severynivska</Title>
@@ -194,6 +179,26 @@
 					<LegendURL width="20" height="20">
 						<Format>image/png</Format>
 						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=mezhi_severynivska"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:openstreetmap</Name>
+				<Title>openstreetmap</Title>
+				<Abstract>GH:openstreetmap ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸tif˸˸˸disabledownload˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-180.0" miny="-85.0511287798066" maxx="179.99999999999997" maxy="85.0511287798066"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="-20037508.342789244" miny="-20037508.342789248" maxx="20037508.342789244" maxy="20037508.342789248"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=openstreetmap"></OnlineResource>
 					</LegendURL>
 				</Style>
 			</Layer>
